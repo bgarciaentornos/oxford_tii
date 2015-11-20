@@ -18,7 +18,7 @@
  * limitations under the License.
  *
  **********************************************************************************/
-package org.sakaiproject.contentreview.impl.adivisors;
+package org.sakaiproject.contentreview.impl.advisors;
 
 import org.sakaiproject.contentreview.service.ContentReviewSiteAdvisor;
 import org.sakaiproject.site.api.Site;
@@ -26,6 +26,10 @@ import org.sakaiproject.site.api.Site;
 public class DefaultSiteAdvisor implements ContentReviewSiteAdvisor {
 
 	public boolean siteCanUseReviewService(Site site) {
+		return true;
+	}
+	
+	public boolean siteCanUseLTIReviewService(Site site) {
 		return true;
 	}
 
