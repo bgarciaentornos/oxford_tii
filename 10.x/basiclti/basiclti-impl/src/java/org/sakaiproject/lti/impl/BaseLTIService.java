@@ -639,6 +639,11 @@ public abstract class BaseLTIService implements LTIService {
 		return insertToolContentDao(id, toolId, reqProps, getContext(), isAdmin(), isMaintain());
 	}
 	
+	public Object insertTIIToolContent(String id, String toolId, Properties reqProps)
+	{
+		return insertToolContentDao(id, toolId, reqProps, getContext(), true, true);
+	}
+	
 	// TODO: Review the site-manage use cases for this method signature
 	public Object insertToolContent(String id, String toolId, Properties reqProps, String siteId)
 	{
